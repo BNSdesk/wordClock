@@ -1,0 +1,89 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "myFont";
+  src: url(./images/OpticalFiber.woff) format("woff");
+}
+
+.container {
+  display: block;
+  position: relative;
+  z-index: 1;
+  height: 100vh;
+  width: 100vw;
+  background-color: #22252c;
+  font-family: "myFont";
+}
+
+main {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 2;
+}
+
+.time-title {
+  color: whitesmoke;
+  font-size: 11vw;
+  font-stretch: wider;
+}
+
+.clock-table {
+  height: 680px;
+  width: 530px;
+  background-color: transparent;
+}
+
+.row-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: wrap;
+      -ms-flex: wrap;
+          flex: wrap;
+  background-color: transparent;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.row-element {
+  background-color: transparent;
+  font-size: 10vw;
+  font-weight: bold;
+  color: #121418;
+}
+
+.active {
+  background-color: transparent;
+  color: white;
+  text-shadow: 2px 0px 20px whitesmoke;
+}
+
+@media (min-width: 600px) {
+  .row-element {
+    font-size: 60px;
+  }
+}
+
+@media (min-width: 1000px) {
+  .time-title {
+    font-size: 100px;
+  }
+}
+/*# sourceMappingURL=style.css.map */
